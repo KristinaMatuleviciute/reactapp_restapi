@@ -96,5 +96,28 @@ describe("users API unit tests",function(){
            );
       });
 
+      it("should get user's profile",function(done){
+        // post to /api/users
+        // calling home page api
+        const superserver = supertest(server);
+        superserver
+        .get("/api/users/")
+        .expect("Content-type",/json/)
+        .expect(200) // THis is HTTP response
+        .end(function(err,res){
+            const id = res.body[0]._id;
+            superserver
+                .get("/api/users/profile/"+id)
+                .expect("Content-type",/json/)
+                .expect(200) // THis is HTTP response
+                .end(function(err,res){
+                    res.body._id.should.equal(id);
+                    done();
+                 }
+               );
+               }
+             );
+        });
+
 
   });
