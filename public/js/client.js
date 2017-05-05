@@ -30263,7 +30263,7 @@
 
 	    var _this = _possibleConstructorReturn(this, (ContantTable.__proto__ || Object.getPrototypeOf(ContantTable)).call(this));
 
-	    _this.state = { name: '', address: '', id: '', showModal: false, items: [] };
+	    _this.state = { name: '', address: '', id: '', phone_number: '', age: '', showModal: false, items: [] };
 	    _this.close = _this.close.bind(_this);
 	    _this.open = _this.open.bind(_this);
 	    _this.handleRemove = _this.handleRemove.bind(_this);
