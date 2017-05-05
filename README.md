@@ -1,5 +1,5 @@
 
-# Assignment 2 reactapp_restapi -  
+# Assignment 2 Reactapp_restapi -  
   a web API for [Assignment 1][assignment1]
 
 - __Lead Maintainer:__ [Kristina Matuleviciute][Lead]
@@ -58,7 +58,7 @@ Get user's profile page: api/users/profile/:id
 
 Copyright (c) 2017, Kristina Matuleviciute. Licensed under [MIT].
 
-[MIT]: ./LICENSE
+[MIT]: https://github.com/KristinaMatuleviciute/reactapp_restapi/blob/master/LICENSE.md
 [Lead]: https://github.com/KristinaMatuleviciute
 [assignment1]:https://github.com/KristinaMatuleviciute/reactapp
 [index]:https://github.com/KristinaMatuleviciute/reactapp_restapi/blob/master/api/users/index.js
