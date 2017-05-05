@@ -1,4 +1,4 @@
-var contacts = [
+var users = [
   {
     "name": "John McCarthy",
     "address": "123 Main street, ",
@@ -10,23 +10,23 @@ var contacts = [
     "name": "Jane Lynch",
     "address": "2 Gracedieu",
     "phone_number": "086 987 6543",
-    "email": "john@yahoo.com",
+    "email": "jane@yahoo.com",
     "age ": "30"
   },
   {
     "name": "Dona Brain",
     "address": "4 Willamstown",
     "phone_number": "086 345 6254",
-    "email": "john@yahoo.com",
+    "email": "dona@yahoo.com",
     "age ": "44"
   },
   {
     "name": "Jimmy McGrath",
     "address": "23 Main street",
     "phone_number": "087 345 7263",
-    "email": "john@yahoo.com",
+    "email": "jimmy@yahoo.com",
     "age ": "34"
   }
 ];
 
-export default contacts;
+export default users;
