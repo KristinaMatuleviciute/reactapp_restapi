@@ -1,16 +1,17 @@
 
-# Assignment 2 reactapp_restapi - a web API for[Assignment 1][assignment1]
+# Assignment 2 reactapp_restapi -  
+  a web API for [Assignment 1][assignment1]
 
 - __Lead Maintainer:__ [Kristina Matuleviciute][Lead]
 
 ## Overview
-###Assignment 1 -
+Assignment 1 -  
 Simple app with [ReactJS] - for client side, [Webpack] for module bundle and [Expressjs] for server side.
-3 views: Home page, Table with friends' contacts information and add, delete functions, Picture gallery as a slide show. This application is responsive, all views are availble in smaller screens
-###Assignment 2 -
-A web API for Assignment 1.
-The integrated API with Reactapp.
-Technologies: Node, Express, MongoDB, Mongoose. 	 
+3 views: Home page, Table with friends' contacts information and add, delete functions, Picture gallery as a slide show. This application is responsive, all views are availble in smaller screens.  
+Assignment 2 -  
+A web API for Assignment 1.  
+The integrated API with Reactapp.  
+Technologies: Node, Express, MongoDB, Mongoose.   	 
 
 
 ## Installation requirements
@@ -57,7 +58,7 @@ Get user's profile page: api/users/profile/:id
 
 Copyright (c) 2017, Kristina Matuleviciute. Licensed under [MIT].
 
-[mit]: reactapp_restapi/LICENSE.md
+[MIT]: ./LICENSE
 [Lead]: https://github.com/KristinaMatuleviciute
 [assignment1]:https://github.com/KristinaMatuleviciute/reactapp
 [index]:https://github.com/KristinaMatuleviciute/reactapp_restapi/blob/master/api/users/index.js
