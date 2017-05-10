@@ -6,6 +6,9 @@ import mongoose from 'mongoose';
 import {loadUsers} from './usersData';
 import {Mockgoose} from 'mockgoose';
 import {nodeEnv}  from './config';
+import expressJWT from 'express-jwt';
+import jwt from 'jsonwebtoken';
+
 
 export const server = express();
 
@@ -33,8 +36,11 @@ if(config.seedDb) {
 //configure body-parser
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded());
-server.use('/api/users', usersRouter);
+//server.use(expressJWT({secret: 'hello'}).unless({path:['/api/users', '/api/users/login', '/', '/login'] }));
+server.use('/api/users', usersRouter, expressJWT({secret: 'hello'}).unless({path:['/api/users', '/api/users/login'] }));
 server.use(express.static('public'));
+
+
 
 
 

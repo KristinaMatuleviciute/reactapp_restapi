@@ -4,7 +4,8 @@ var users = [
     "address": "123 Main street, ",
     "phone_number": "085 123 4567",
     "email": "john@yahoo.com",
-    "age ": "20"
+    "age ": "20",
+    "password ": "secret"
   },
   {
     "name": "Jane Lynch",
