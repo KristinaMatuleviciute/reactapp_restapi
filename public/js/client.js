@@ -28703,6 +28703,7 @@
 	        data: goodJson,
 	        success: function success(data) {
 	          console.log('hi');
+	          window.location = '/#/table';
 	        },
 	        error: function error(xhr, status, err) {
 	          //console.log("We got an error here");
@@ -31897,9 +31898,9 @@
 	    { path: '/', component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Login2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'login', component: _Login2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'index', name: 'index', component: _Index2.default, onEnter: requireAuth }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'profile', name: 'profile', component: _Profile2.default, onEnter: requireAuth }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'gallery', name: 'gallery', component: _Gallery2.default, onEnter: requireAuth }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'index', name: 'index', component: _Index2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'profile', name: 'profile', component: _Profile2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'gallery', name: 'gallery', component: _Gallery2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'edittable', name: 'edittable', component: _EditTable2.default, onEnter: requireAuth }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'table', name: 'table', component: _ContactTable2.default, onEnter: requireAuth })
 	  )
@@ -32096,6 +32097,15 @@
 	                  _reactBootstrap.NavItem,
 	                  { eventKey: 1 },
 	                  'Login'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                _reactRouterBootstrap.LinkContainer,
+	                { to: '/gallery' },
+	                _react2.default.createElement(
+	                  _reactBootstrap.NavItem,
+	                  { eventKey: 2 },
+	                  'Gallery'
 	                )
 	              )
 	            )
@@ -57422,6 +57432,10 @@
 
 	var _beach2 = _interopRequireDefault(_beach);
 
+	var _as = __webpack_require__(559);
+
+	var _as2 = _interopRequireDefault(_as);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -57464,11 +57478,43 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      _react2.default.createElement(
+	        'div',
+	        { style: { backgroundColor: '#E3F5EA', width: '100%' } },
+	        _react2.default.createElement(
+	          'div',
+	          { style: { 'padding': '20px' } },
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#' },
+	            _react2.default.createElement('img', { className: 'picture', style: { 'width': '300px' }, src: _as2.default })
+	          ),
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Welcome '
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'to my personal site',
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'My name is Kristina Matuleviciute. This is assignment for Enterprise Web development - application made using React, Express, Webpack. '
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              ' Here you will find gallery with nice pictures and quotes I like and Contact table where you can add or delete entries. I hope you enjoy :)  '
+	            )
+	          )
+	        )
+	      );
 	      var total = this.state.name + ' ' + this.state.password;
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'loginForm', style: { backgroundImage: 'url(' + _beach2.default + ')',
-	            padding: '50px', width: '50%' } },
+	        { className: 'loginForm' },
 	        _react2.default.createElement(
 	          'h1',
 	          null,

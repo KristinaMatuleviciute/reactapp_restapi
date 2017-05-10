@@ -37,7 +37,7 @@ if(config.seedDb) {
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded());
 //server.use(expressJWT({secret: 'hello'}).unless({path:['/api/users', '/api/users/login', '/', '/login'] }));
-server.use('/api/users', usersRouter, expressJWT({secret: 'hello'}).unless({path:['/api/users', '/api/users/login'] }));
+server.use('/api/users', usersRouter, expressJWT({secret: 'hello'}).unless({path:['/api/users', '/api/users/login', '/api/users/gallery'] }));
 server.use(express.static('public'));
 
 
